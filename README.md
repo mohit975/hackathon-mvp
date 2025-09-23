@@ -7,24 +7,28 @@ This is a React-based document processing platform built during a hackathon. The
 ## ✨ Features
 
 ### 📤 **Unified Upload Interface**
+
 - **Tabbed Upload System**: General, Sales, Service Delivery, HR teams
 - **Team-Specific Workflows**: Customized document types and processing
 - **Drag & Drop Support**: Modern file upload experience
 - **File Type Validation**: Supports PDF, DOC, XLS, PPT formats
 
 ### 📈 **Progress Tracking**
+
 - **Real-time Progress Monitoring**: Visual progress indicators
 - **Team Performance Analytics**: Individual team progress tracking
 - **Activity Feed**: Live status updates and processing history
 - **Time-based Filtering**: Today, Week, Month, All Time views
 
 ### 📊 **Document Queue Management**
+
 - **Status Tracking**: Waiting, Scanning, Validated, Error states
 - **Batch Processing**: Organized file management
 - **Document Validation**: Automated file checking
 - **Retry Mechanisms**: Error handling and reprocessing
 
 ### ⚙️ **Workflow Management**
+
 - **Custom Workflows**: Team-specific processing pipelines
 - **AI Integration**: Intelligent document analysis
 - **ChatBot Assistant**: 24/7 AI support
@@ -43,17 +47,20 @@ This is a React-based document processing platform built during a hackathon. The
 ## 📦 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <your-repo-url>
    cd hackathon-mvp
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm start
    ```
@@ -100,18 +107,21 @@ src/
 ## 📱 Team-Specific Features
 
 ### 💼 **Sales Team**
+
 - Proposal and contract management
 - Revenue report processing
 - Client analysis documents
 - Custom validation rules
 
 ### ⚙️ **Service Delivery**
+
 - Technical specification handling
 - Deployment guide management
 - Service report processing
 - Project documentation
 
 ### 👥 **Human Resources**
+
 - Policy document management
 - Employee record processing
 - Compliance documentation
