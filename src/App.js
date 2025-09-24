@@ -105,12 +105,12 @@ function App() {
               <div className="brand-logo">
                 <div className="logo-icon">⚡</div>
                 <div className="brand-text">
-                  <span className="brand-name">Synaptic</span>
+                  <span className="brand-name">Synoptic</span>
                   <span className="brand-suffix">AI</span>
                 </div>
               </div>
               <div className="header-tagline">
-                Intelligent Document Processing Platform
+                The Business Strategy Platform
               </div>
             </div>
           </header>
