@@ -103,7 +103,7 @@ function App() {
           <header className="app-header">
             <div className="header-content">
               <div className="brand-logo">
-                <div className="logo-icon">⚡</div>
+                <div className="logo-icon">🤖</div>
                 <div className="brand-text">
                   <span className="brand-name">Synoptic</span>
                   <span className="brand-suffix">AI</span>
