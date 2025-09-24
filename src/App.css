@@ -697,11 +697,14 @@ body {
 
 /* Upload Queue */
 .upload-queue {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(71, 85, 105, 0.2);
   padding: 1.5rem 2rem;
   margin-bottom: 2rem;
+  color: #f1f5f9;
 }
 
 .queue-table {
@@ -716,15 +719,16 @@ body {
 }
 
 .queue-table th {
-  color: #4f5d75;
+  color: #cbd5e1;
   font-size: 1rem;
-  border-bottom: 2px solid #e3e8f0;
+  border-bottom: 2px solid rgba(71, 85, 105, 0.3);
   font-weight: 600;
 }
 
 .queue-table td {
-  border-bottom: 1px solid #f0f1f5;
+  border-bottom: 1px solid rgba(71, 85, 105, 0.2);
   vertical-align: middle;
+  color: #f1f5f9;
 }
 
 .queue-thumb {
@@ -3752,9 +3756,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(71, 85, 105, 0.2);
+  color: #f1f5f9;
 }
 
 .progress-header {
@@ -3892,9 +3899,11 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(71, 85, 105, 0.3);
   min-width: 200px;
 }
 
@@ -3917,12 +3926,12 @@ body {
 .status-number {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #f1f5f9;
 }
 
 .status-label {
   font-size: 1rem;
-  color: #64748b;
+  color: #cbd5e1;
 }
 
 /* Team Breakdown */
@@ -3933,7 +3942,7 @@ body {
 .team-breakdown h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #f1f5f9;
   margin-bottom: 2rem;
 }
 
@@ -3944,10 +3953,13 @@ body {
 }
 
 .team-card {
-  background: #fff;
-  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(71, 85, 105, 0.3);
+  color: #f1f5f9;
 }
 
 .team-header {
@@ -4014,16 +4026,17 @@ body {
 .recent-activity h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #f1f5f9;
   margin-bottom: 2rem;
 }
 
 .activity-list {
-  background: #f8fafc;
-  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.4);
+  border-radius: 16px;
   padding: 1rem;
   max-height: 400px;
   overflow-y: auto;
+  border: 1px solid rgba(71, 85, 105, 0.2);
 }
 
 .activity-item {
@@ -4031,10 +4044,13 @@ body {
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
   margin-bottom: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(71, 85, 105, 0.2);
+  color: #f1f5f9;
 }
 
 .activity-icon {
@@ -4114,7 +4130,7 @@ body {
 .quick-actions h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #f1f5f9;
   margin-bottom: 2rem;
 }
 
