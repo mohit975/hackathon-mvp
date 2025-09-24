@@ -8,6 +8,7 @@ const SalesUpload = () => {
   const [selectedFiles, setSelectedFiles] = useState([])
   const [documentPrompt, setDocumentPrompt] = useState('')
   const [isDragOver, setIsDragOver] = useState(false)
+  const [selectedDocTypes, setSelectedDocTypes] = useState([])
 
   const handleFileSelect = (files) => {
     const fileArray = Array.from(files)
@@ -37,6 +38,18 @@ const SalesUpload = () => {
 
   const removeFile = (index) => {
     setSelectedFiles(selectedFiles.filter((_, i) => i !== index))
+  }
+
+  const toggleDocumentType = (docType) => {
+    console.log('Toggle clicked for:', docType)
+    console.log('Current selected types:', selectedDocTypes)
+    setSelectedDocTypes((prev) => {
+      const newTypes = prev.includes(docType)
+        ? prev.filter((type) => type !== docType)
+        : [...prev, docType]
+      console.log('New selected types:', newTypes)
+      return newTypes
+    })
   }
 
   const handleProceedToQuestions = () => {
@@ -121,9 +134,16 @@ const SalesUpload = () => {
             <h3>Common Sales Documents:</h3>
             <div className="doc-type-chips">
               {salesDocumentTypes.map((type, index) => (
-                <span key={index} className="doc-chip">
+                <button
+                  key={index}
+                  type="button"
+                  className={`doc-chip ${
+                    selectedDocTypes.includes(type) ? 'selected' : ''
+                  }`}
+                  onClick={() => toggleDocumentType(type)}
+                >
                   {type}
-                </span>
+                </button>
               ))}
             </div>
           </div>

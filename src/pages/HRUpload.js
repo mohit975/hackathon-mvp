@@ -8,6 +8,7 @@ const HRUpload = () => {
   const [selectedFiles, setSelectedFiles] = useState([])
   const [documentPrompt, setDocumentPrompt] = useState('')
   const [isDragOver, setIsDragOver] = useState(false)
+  const [selectedDocTypes, setSelectedDocTypes] = useState([])
 
   const handleFileSelect = (files) => {
     const fileArray = Array.from(files)
@@ -37,6 +38,18 @@ const HRUpload = () => {
 
   const removeFile = (index) => {
     setSelectedFiles(selectedFiles.filter((_, i) => i !== index))
+  }
+
+  const toggleDocumentType = (docType) => {
+    console.log('HR Toggle clicked for:', docType)
+    console.log('HR Current selected types:', selectedDocTypes)
+    setSelectedDocTypes((prev) => {
+      const newTypes = prev.includes(docType)
+        ? prev.filter((type) => type !== docType)
+        : [...prev, docType]
+      console.log('HR New selected types:', newTypes)
+      return newTypes
+    })
   }
 
   const handleProceedToQuestions = () => {
@@ -131,9 +144,16 @@ const HRUpload = () => {
             <h3>Common HR Documents:</h3>
             <div className="doc-type-chips">
               {hrDocumentTypes.map((type, index) => (
-                <span key={index} className="doc-chip">
+                <button
+                  key={index}
+                  type="button"
+                  className={`doc-chip ${
+                    selectedDocTypes.includes(type) ? 'selected' : ''
+                  }`}
+                  onClick={() => toggleDocumentType(type)}
+                >
                   {type}
-                </span>
+                </button>
               ))}
             </div>
           </div>
