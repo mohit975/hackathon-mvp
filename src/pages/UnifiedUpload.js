@@ -355,9 +355,8 @@ const UnifiedUpload = () => {
               <div className="hr-notice">
                 <div className="notice-icon">🔒</div>
                 <div className="notice-content">
-                  <strong>Privacy Notice:</strong> HR documents are handled with
-                  enhanced security and confidentiality measures in compliance
-                  with data protection regulations.
+                  <strong>Privacy Notice:</strong> HR documents are processed
+                  with enhanced security and compliance measures.
                 </div>
               </div>
             </div>

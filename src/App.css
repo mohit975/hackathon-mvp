@@ -23,8 +23,12 @@ body {
 
 /* Premium Header */
 .app-header {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%), 
-              url('/Banner.jpg') center/cover no-repeat;
+  background: linear-gradient(
+      135deg,
+      rgba(171, 175, 193, 0.8) 30%,
+      rgba(118, 75, 162, 0.8) 50%
+    ),
+    url('./Banner.jpg') center/cover no-repeat;
   color: #fff;
   padding: 2rem 0;
   text-align: center;
@@ -2700,6 +2704,11 @@ body {
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .upload-section h2 {
@@ -2752,6 +2761,9 @@ body {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(102, 126, 234, 0.1);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .selected-files h3 {
@@ -3379,6 +3391,7 @@ body {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow-x: hidden;
 }
 
 .upload-header {
@@ -3452,10 +3465,18 @@ body {
 
 .upload-tab-content {
   padding: 2rem 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .team-upload-section {
   padding: 2rem 0;
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .team-header {
@@ -3492,6 +3513,9 @@ body {
 /* Document Types Grid */
 .document-types {
   margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .document-types h3 {
@@ -3503,8 +3527,10 @@ body {
 
 .type-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .type-card {
@@ -3517,6 +3543,8 @@ body {
   border-radius: 8px;
   border: 2px solid transparent;
   transition: all 0.2s ease;
+  min-width: 0;
+  max-width: 200px;
 }
 
 .type-card:hover {
@@ -3543,6 +3571,11 @@ body {
   background: #f8fafc;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .upload-dropzone:hover {
@@ -3655,22 +3688,33 @@ body {
 /* HR Notice */
 .hr-notice {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
   background: #fef3c7;
   border: 1px solid #f59e0b;
   border-radius: 8px;
   margin-top: 2rem;
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .notice-icon {
   font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 2rem;
+  text-align: center;
 }
 
 .notice-content {
   font-size: 0.9rem;
   color: #92400e;
+  flex: 1;
+  word-wrap: break-word;
 }
 
 /* ==============================================
